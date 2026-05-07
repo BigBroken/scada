@@ -2,6 +2,8 @@
 
 A working oil & gas SCADA demo: simulated gas wellpad → MQTT → Ignition tags → operator dashboard → PostgreSQL historian. Built around the patterns Houston O&G integrators actually deploy.
 
+![Operator dashboard](docs/images/dashboard.png)
+
 ## Why this exists
 
 Most SCADA portfolio projects are generic IoT demos with the word "industrial" sprinkled in. This one targets the domain: a multi-well natural gas pad with realistic decline curves, tubing/casing pressure dynamics, condensate tank fills, and a fault-injection harness so you can demo alarm/recovery in 30 seconds.
@@ -50,6 +52,8 @@ Most SCADA portfolio projects are generic IoT demos with the word "industrial" s
 3. Open Ignition Designer → tags populate under `[default]Wellpad/SITE01/...`
 4. Open the Perspective dashboard — pressures, flows, tank levels live
 5. `python simulator/inject_fault.py WELL_03 pressure_spike 30` — alarm fires, dashboard turns red, recovers after 30s
+
+![Fault injection demo](docs/images/fault-injection.gif)
 
 ## Skills demonstrated
 
