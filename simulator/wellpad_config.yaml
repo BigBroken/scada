@@ -1,0 +1,34 @@
+site_id: SITE01
+publish_interval_s: 1.0
+
+broker:
+  host: localhost
+  port: 1883
+
+# Five natural-gas wells with realistic spread of operating points.
+# Pressures in psig, flow in mcf/d (thousand cubic feet per day).
+wells:
+  - well_id: WELL_01
+    nominal_tubing_psi: 950
+    nominal_flow_mcfd: 850
+    decline_per_day_pct: 0.15
+
+  - well_id: WELL_02
+    nominal_tubing_psi: 720
+    nominal_flow_mcfd: 540
+    decline_per_day_pct: 0.22
+
+  - well_id: WELL_03
+    nominal_tubing_psi: 1180
+    nominal_flow_mcfd: 1240
+    decline_per_day_pct: 0.18
+
+  - well_id: WELL_04
+    nominal_tubing_psi: 410
+    nominal_flow_mcfd: 220
+    decline_per_day_pct: 0.30
+
+  - well_id: WELL_05
+    nominal_tubing_psi: 880
+    nominal_flow_mcfd: 670
+    decline_per_day_pct: 0.20
